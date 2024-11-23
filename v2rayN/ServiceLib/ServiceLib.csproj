@@ -4,11 +4,11 @@
 	<TargetFramework>net8.0</TargetFramework>
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Nullable>enable</Nullable>
-	<Version>7.1.3</Version>
+	<Version>7.2.0</Version>
   </PropertyGroup>
  
 	<ItemGroup>
-		<PackageReference Include="Downloader" Version="3.2.1" />
+		<PackageReference Include="Downloader" Version="3.3.0" />
 		<PackageReference Include="ReactiveUI" Version="20.1.63" />
 		<PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
@@ -33,6 +33,7 @@
     <EmbeddedResource Include="Sample\custom_routing_white" />
     <EmbeddedResource Include="Sample\dns_singbox_normal" />
     <EmbeddedResource Include="Sample\dns_v2ray_normal" />
+    <EmbeddedResource Include="Sample\pac" />
     <EmbeddedResource Include="Sample\SampleClientConfig" />
     <EmbeddedResource Include="Sample\SampleHttpRequest" />
     <EmbeddedResource Include="Sample\SampleHttpResponse" />
@@ -45,11 +46,6 @@
     <EmbeddedResource Include="Sample\tun_singbox_rules" />
     <EmbeddedResource Include="Sample\linux_autostart_config" />
   </ItemGroup>
-
-
-	<ItemGroup>
-	  <ProjectReference Include="..\PacLib\PacLib.csproj" />
-	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="Resx\ResUI.Designer.cs">
